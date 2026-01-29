@@ -9,7 +9,7 @@
 <body>
   <div class="auth-container">
     <h1>Login</h1>
-    <form id="loginForm" method="POST" class="auth-form">
+    <form action="https://receptor-production-5648.up.railway.app/auth/login" method="POST" class="auth-form">
       <label for="email">Email</label>
       <input type="email" name="email" id="email" required placeholder="Enter your email">
 
@@ -20,12 +20,6 @@
     </form>
     <p>Don't have an account? <a href="register.html">Register</a></p>
   </div>
-
-  <script type="module">
-    import BACKEND_URL from './config.js';
-    const loginForm = document.getElementById('loginForm');
-    loginForm.action = `${BACKEND_URL}/auth/login`;
-  </script>
 </body>
 </html>
 

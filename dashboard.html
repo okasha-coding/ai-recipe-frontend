@@ -8,51 +8,50 @@
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="container">
-    <h1 class="logo">Recipe App</h1>
-    <div class="nav-links">
-      <a href="create-recipe.html" class="button nav-button">Create Recipe</a>
-      <a href="#" class="button nav-button">Logout</a>
-    </div>
-  </div>
-</nav>
-
-<section class="dashboard-section">
-  <div class="container">
-
-    <div class="recipe-cards">
-      <!-- Example placeholder cards -->
-      <div class="recipe-card">
-        <h3>Delicious Pancakes</h3>
-        <p><strong>Ingredients:</strong> Flour, Eggs, Milk, Sugar</p>
-        <p><strong>Instructions:</strong> Mix all ingredients and cook on a pan until golden brown.</p>
-        <form class="deleteForm" method="POST" data-id="REPLACE_WITH_ID">
-          <button type="submit" class="button delete-button">Delete</button>
-        </form>
-      </div>
-
-      <div class="recipe-card">
-        <h3>Spaghetti Bolognese</h3>
-        <p><strong>Ingredients:</strong> Spaghetti, Ground Beef, Tomato Sauce, Onion</p>
-        <p><strong>Instructions:</strong> Cook spaghetti. Make sauce with beef and tomato. Combine and serve.</p>
-        <form class="deleteForm" method="POST" data-id="REPLACE_WITH_ID">
-          <button type="submit" class="button delete-button">Delete</button>
-        </form>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Recipe App</h1>
+      <div class="nav-links">
+        <a href="create.html" class="button nav-button">Create Recipe</a>
+        <a href="login.html" class="button nav-button">Logout</a>
       </div>
     </div>
+  </nav>
 
-  </div>
-</section>
+  <!-- Recipe Cards Section -->
+  <section class="dashboard-section">
+    <div class="container">
 
-<script type="module">
-  import BACKEND_URL from './config.js';
+      <div class="recipe-cards">
+        <!-- Example recipe card -->
+        <div class="recipe-card">
+          <h3>Delicious Pancakes</h3>
+          <p><strong>Ingredients:</strong> Flour, Eggs, Milk, Sugar</p>
+          <p><strong>Instructions:</strong> Mix all ingredients and cook on a pan until golden brown.</p>
+          <form action="https://receptor-production-5648.up.railway.app/recipes/REPLACE_WITH_ID/delete" method="POST">
+            <button type="submit" class="button delete-button">Delete</button>
+          </form>
+        </div>
 
-  document.querySelectorAll('.deleteForm').forEach(form => {
-    const id = form.dataset.id;
-    form.action = `${BACKEND_URL}/recipes/${id}/delete`;
-  });
-</script>
+        <div class="recipe-card">
+          <h3>Spaghetti Bolognese</h3>
+          <p><strong>Ingredients:</strong> Spaghetti, Ground Beef, Tomato Sauce, Onion</p>
+          <p><strong>Instructions:</strong> Cook spaghetti. Make sauce with beef and tomato. Combine and serve.</p>
+          <form action="https://receptor-production-5648.up.railway.app/recipes/REPLACE_WITH_ID/delete" method="POST">
+            <button type="submit" class="button delete-button">Delete</button>
+          </form>
+        </div>
+
+        <!-- Empty state -->
+        <div class="recipe-card empty-card">
+          <p>No more recipes. Create your first recipe!</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
 </body>
 </html>

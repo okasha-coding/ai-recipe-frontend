@@ -1,5 +1,6 @@
 
 
-const BACKEND_URL = "https://rotten-trams-shine.loca.lt"; // <- replace with your current Localtunnel URL
 
+const BACKEND_URL = "https://receptor-production-5648.up.railway.app";
 export default BACKEND_URL;
+

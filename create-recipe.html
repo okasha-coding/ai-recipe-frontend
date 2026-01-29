@@ -8,40 +8,38 @@
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="container">
-    <h1 class="logo">Recipe App</h1>
-    <div class="nav-links">
-      <a href="dashboard.html" class="button nav-button">Dashboard</a>
-      <a href="#" class="button nav-button">Logout</a>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Recipe App</h1>
+      <div class="nav-links">
+        <a href="login.html" class="button nav-button">Logout</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<section class="form-section">
-  <div class="form-container">
-    <h2>Create a New Recipe</h2>
-    <form id="createForm" method="POST">
-      <label for="title">Recipe Title</label>
-      <input type="text" id="title" name="title" placeholder="Enter recipe title" required>
+  <!-- Create Recipe Form -->
+  <section class="form-section">
+    <div class="form-container">
+      <h2>Create a New Recipe</h2>
+      <form action="https://receptor-production-5648.up.railway.app/recipes/create" method="POST">
+        <label for="title">Recipe Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter recipe title" required>
 
-      <label for="ingredients">Ingredients</label>
-      <textarea id="ingredients" name="ingredients" rows="5" placeholder="List ingredients" required></textarea>
+        <label for="ingredients">Ingredients</label>
+        <textarea id="ingredients" name="ingredients" rows="5" placeholder="List ingredients" required></textarea>
 
-      <label for="instructions">Instructions</label>
-      <textarea id="instructions" name="instructions" rows="7" placeholder="Step by step instructions" required></textarea>
+        <label for="instructions">Instructions</label>
+        <textarea id="instructions" name="instructions" rows="7" placeholder="Step by step instructions" required></textarea>
 
-      <button type="submit" class="button submit-button">Create Recipe</button>
-    </form>
-  </div>
-</section>
+        <button type="submit" class="button submit-button">Create Recipe</button>
+      </form>
+    </div>
+  </section>
 
-<script type="module">
-  import BACKEND_URL from './config.js';
-  const createForm = document.getElementById('createForm');
-  createForm.action = `${BACKEND_URL}/recipes/create`;
-</script>
+  <footer>
+    <p>&copy; 2026 Recipe App. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
-
