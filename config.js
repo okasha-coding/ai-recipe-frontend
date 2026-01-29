@@ -1,5 +1,5 @@
 
 
-const BACKEND_URL = "https://hot-dryers-watch.loca.lt"; // <- replace with your current Localtunnel URL
+const BACKEND_URL = "https://rotten-trams-shine.loca.lt"; // <- replace with your current Localtunnel URL
 
 export default BACKEND_URL;
