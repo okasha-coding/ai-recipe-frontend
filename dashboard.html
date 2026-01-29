@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receptor - Recipe App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Recipe App</h1>
+      <div class="nav-links">
+        <a href="create-recipe.html" class="button nav-button">Create Recipe</a>
+        <a href="#" class="button nav-button">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Recipe Cards Section -->
+  <section class="dashboard-section">
+    <div class="container">
+
+      <div class="recipe-cards">
+        <!-- Placeholder cards for demo -->
+        <div class="recipe-card">
+          <h3>Delicious Pancakes</h3>
+          <p><strong>Ingredients:</strong> Flour, Eggs, Milk, Sugar</p>
+          <p><strong>Instructions:</strong> Mix all ingredients and cook on a pan until golden brown.</p>
+          <form action="#" method="POST">
+            <button type="submit" class="button delete-button">Delete</button>
+          </form>
+        </div>
+
+        <div class="recipe-card">
+          <h3>Spaghetti Bolognese</h3>
+          <p><strong>Ingredients:</strong> Spaghetti, Ground Beef, Tomato Sauce, Onion</p>
+          <p><strong>Instructions:</strong> Cook spaghetti. Make sauce with beef and tomato. Combine and serve.</p>
+          <form action="#" method="POST">
+            <button type="submit" class="button delete-button">Delete</button>
+          </form>
+        </div>
+
+        <!-- Empty state card -->
+        <div class="recipe-card empty-card">
+          <p>No more recipes. Create your first recipe!</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
