@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 
-/* Header */
+
 header {
   background-color: #4caf50;
   color: white;
@@ -36,7 +36,7 @@ nav a.button:hover {
   background-color: #e0e0e0;
 }
 
-/* Main section */
+
 main {
   padding: 20px;
 }
@@ -45,7 +45,7 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Recipes list */
+
 .recipe-list {
   list-style: none;
   padding: 0;
@@ -69,7 +69,6 @@ h2 {
   margin: 5px 0;
 }
 
-/* Delete button */
 .delete-button {
   background-color: #ff4d4f;
   color: white;
@@ -85,12 +84,11 @@ h2 {
   background-color: #ff7875;
 }
 
-/* No recipes message */
 .no-recipes {
   font-style: italic;
   color: #555;
 }
-/* Auth container */
+
 .auth-container {
   max-width: 400px;
   margin: 80px auto;
@@ -101,7 +99,6 @@ h2 {
   text-align: center;
 }
 
-/* Form elements */
 .auth-form {
   display: flex;
   flex-direction: column;
@@ -121,7 +118,7 @@ h2 {
   font-size: 16px;
 }
 
-/* Submit button */
+
 .submit-button {
   background-color: #4caf50;
   color: white;
@@ -136,7 +133,9 @@ h2 {
 .submit-button:hover {
   background-color: #45a049;
 }
-/* Form section */
+
+
+
 .form-section {
   display: flex;
   justify-content: center;
@@ -194,7 +193,8 @@ h2 {
 }
 
 
-/* Links */
+
+
 .auth-container p {
   margin-top: 15px;
 }
@@ -209,7 +209,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* Reset and body */
+
 body {
   margin: 0;
   padding: 0;
@@ -218,18 +218,20 @@ body {
   color: #333;
 }
 
-/* Navbar */
-/* Navbar */
+
+
 .navbar {
   background-color: #4caf50;
   padding: 15px 20px;
   color: white;
 }
 
-/* Use a flex container to space logo and buttons */
+
+
 .navbar .container {
   display: flex;
-  justify-content: space-between; /* pushes buttons to the right */
+  justify-content: space-between; 
+  
   align-items: center;
 }
 
@@ -258,7 +260,8 @@ body {
 }
 
 
-/* Hero Section */
+
+
 .hero {
   text-align: center;
   padding: 80px 20px 60px 20px;
@@ -282,7 +285,8 @@ body {
   border-radius: 10px;
 }
 
-/* Features Section */
+
+
 .features {
   text-align: center;
   padding: 60px 20px;
@@ -310,7 +314,7 @@ body {
   font-weight: bold;
 }
 
-/* Footer */
+
 footer {
   background-color: #4caf50;
   color: white;
@@ -319,14 +323,17 @@ footer {
   margin-top: 50px;
 }
 
-/* Wrapper spacing */
+
+
 .recipe-cards {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* space between recipes */
+  gap: 20px; 
+  
 }
 
-/* Recipe container (NOT a card) */
+
+
 .recipe-card {
   background: #ffffff;
   padding: 24px;
